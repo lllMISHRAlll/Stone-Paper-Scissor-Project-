@@ -138,7 +138,7 @@ body {
   border: 10px solid #0074b6;
   box-shadow: none;
   filter: drop-shadow(-1px 1px 11px rgba(255, 255, 255, 0.35));
-  transition: all 0.01s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 #scissor {
   position: relative;
@@ -152,7 +152,7 @@ body {
   border: 10px solid #bd00ff;
   box-shadow: none;
   filter: drop-shadow(-1px 1px 11px rgba(255, 255, 255, 0.35));
-  transition: all 0.01s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 #paper {
   transform: rotate(5.27deg);
@@ -167,7 +167,7 @@ body {
   border: 10px solid #ffa943;
   box-shadow: none;
   filter: drop-shadow(-1px 1px 11px rgba(255, 255, 255, 0.35));
-  transition: all 0.01s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 /* ------- RESULT BOARD --------- */
@@ -191,6 +191,7 @@ body {
   justify-content: center;
   flex-direction: column;
   color: #ffffff;
+  margin-left: .5rem;
 }
 .result-img {
   width: 180px !important;
