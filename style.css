@@ -24,7 +24,7 @@ body {
   margin-top: 3rem;
   border: 2px solid #ffff;
   border-radius: 13px;
-  width: 60%;
+  width: 60vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,7 +42,8 @@ body {
 .score {
   background: #ffffff;
   border-radius: 9px;
-  width: 130px;
+  width: 8rem;
+  min-width: 7rem;
   padding: 0.5rem;
   margin: 1rem 0;
   text-align: center;
@@ -50,6 +51,7 @@ body {
 }
 .computer {
   margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .you {
@@ -297,7 +299,8 @@ body {
 }
 #next-btn {
   display: none;
-  margin-left: 0.6rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
 }
 
 /* --  RULES MODAL  -- */
@@ -348,12 +351,20 @@ body {
 }
 .rules li {
   font-size: 0.8rem;
-  list-style: none;
   text-align: left;
+  list-style-type: square;
   margin-bottom: 0.6rem;
   letter-spacing: 0.008em;
   text-align: justify;
   z-index: 4;
+  list-style-position:outside;
+}
+
+.rules{
+  li::marker {
+    color: #FFD600;
+    font-size: 1.1rem;
+  }
 }
 
 /* close animation */

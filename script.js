@@ -17,7 +17,7 @@ let resultText = document.getElementById("result-text-1");
 let resultText2 = document.getElementById("result-text-2");
 let picked = document.querySelectorAll(".picked");
 
-const computerScore = document.getElementById("computer-score");
+const computerScore = document.getElementById("cmpt-score");
 const userScore = document.getElementById("user-score");
 
 let score = {
@@ -49,7 +49,7 @@ closeModalBtn.addEventListener("click", () => {
 });
 
 nextBtn.addEventListener("click", () => {
-  playBoard.style.display = "block";
+  playBoard.style.display = "none";
   resultBoard.style.display = "none";
   wonGame.style.display = "flex";
 });
@@ -125,6 +125,7 @@ const startGame = (userPicked) => {
     score.computer++;
   }
   playBoard.style.display = "none";
+  nextBtn.style.display = "block";
   resultBoard.style.display = "flex";
   userResult.classList.add(`${userPicked}-div`);
   pcResult.classList.add(`${pcPicked}-div`);
