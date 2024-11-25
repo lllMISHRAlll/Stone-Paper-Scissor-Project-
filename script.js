@@ -40,7 +40,13 @@ const result = {
 
 rulesBtn.forEach((element) => {
   element.addEventListener("click", () => {
-    rulesModal.style.display = "block";
+
+    if (rulesModal.style.display === "block") {
+      rulesModal.style.display = "none";
+      
+    } else {
+      rulesModal.style.display = "block";
+    }
   });
 });
 
